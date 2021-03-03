@@ -8,7 +8,7 @@ const errorMsg = document.getElementById("error");
 
 weatherForm.addEventListener("submit", (event)=>{
     event.preventDefault();
-    fetch(`http://localhost:5000/weather?address=${search.value}`)
+    fetch(`/weather?address=${search.value}`)
     .then(res=>res.json()).then(data=>{
         if(data.error){
             errorMsg.innerText = data.error

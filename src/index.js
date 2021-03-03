@@ -6,6 +6,7 @@ const forecast = require('./utils/forecast');
 
 const app = express();
 
+const port = process.env.PORT || 5000;
 
 //define path for express  config
 const publicDirectoryPath = path.join(__dirname, '../public');
@@ -80,6 +81,6 @@ app.get('*', (req, res) => {
     });
 });
 
-app.listen(5000, ()=>{
-    console.log("listening on 5000");
+app.listen(port, ()=>{
+    console.log(`listening on ${port}`);
 })

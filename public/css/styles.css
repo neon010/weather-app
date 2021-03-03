@@ -31,10 +31,8 @@ header a{
     margin-right: 16px;
     text-decoration: none;
 }
-.page-header{
-    color:blue;
-    margin-right: 16px;
-    text-decoration: none;
+#msgBar{
+    display:none;
 }
 img{
     height: 100px;

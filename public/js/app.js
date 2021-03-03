@@ -1,6 +1,3 @@
-console.log("hello from client");
-
-
 const weatherForm = document.querySelector("form");
 const search = document.querySelector("input");
 const locationMsg = document.getElementById("location");

@@ -4,6 +4,8 @@ const searchData = document.getElementById("searched-result")
 const errorMsg = document.getElementById("error");
 const getWeather = document.getElementById("get-weather");
 
+
+
 window.onload = () => {
     if(!navigator.geolocation){
         getWeather.innerHTML = `<p>Browser does not support geolocation</p>`

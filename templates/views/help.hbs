@@ -10,10 +10,14 @@
     <title>help</title>
 </head>
 <body>
-    {{>header}}
-    <div class="help-message">
-        <p>{{messages}}</p>
+    <div id="page-container">
+        <div class="content-wrap">
+            {{>header}}
+            <div class="help-message">
+                <p>{{messages}}</p>
+            </div>
+        </div>
+        {{>footer}}
     </div>
-    {{>footer}}
 </body>
 </html>

@@ -4,6 +4,14 @@ body{
     font-family: 'Roboto', sans-serif;
     color: #fff;
 }
+.page-container{
+    position: relative;
+    min-height: 100vh;
+}
+.content-wrap{
+    padding-bottom: 2.5rem; 
+}
+
 .header{
     display: flex;
     justify-content: space-around;
@@ -149,12 +157,18 @@ body{
     font-size: 20px;
 }
 footer{
-    width: 100%;
-    position:fixed;
+    /* width: 100%;
+    position:relative;
     bottom: 10px;
     align-items: center;
     text-align: center;
     border-top: 1px solid #eeeeee;
+    color:#888888; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
     color:#888888;
 }
 

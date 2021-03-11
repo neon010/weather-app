@@ -17,11 +17,12 @@ window.onload = () => {
                 navigator.geolocation.getCurrentPosition((position) =>{
                     const url = `https://api.weatherstack.com/current?access_key=1d5e2e008d42c7c55663e54842d39575&query=${position.coords.latitude},${position.coords.longitude}&units=m`
                     fetch(url).then(res=>res.json()).then(result=> {
+                        console.log(result);
                         if(!result){
                             getWeather.innerHTML= `<p>Loading....</p>`
                         }else{
                             if(result.error){
-                                getWeather.innerHTML= `<p>${result.error}</p>`
+                                getWeather.innerHTML= `<p>${result.error.info}</p>`
                             }else{
                                 getWeather.innerHTML = `<div>
                                                         <p class="location">${result.location.name}, ${result.location.region},${result.location.country}</p>

@@ -72,7 +72,6 @@ body{
 .temp-type{
     position: relative;
     top: -75px;
-    margin-left: -10px;
     font-size: 1.5rem;
 }
 .search-weather{
@@ -122,6 +121,8 @@ body{
 .submit-button:focus{
     background-color:#e74c3c;
     color:#fff;
+    outline: none;
+    border:2px solid #e74c3c;
 }
 .large-font{
     font-size: 20px;
@@ -149,7 +150,7 @@ body{
 }
 footer{
     width: 100%;
-    position:fixed;
+    position:absolute;
     bottom: 10px;
     align-items: center;
     text-align: center;

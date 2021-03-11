@@ -15,7 +15,7 @@ window.onload = () => {
                 getWeather.innerHTML= `<p>Geolocation is denied by browser. Please give access to location</p>`
             }else{
                 navigator.geolocation.getCurrentPosition((position) =>{
-                    const url = `http://api.weatherstack.com/current?access_key=1d5e2e008d42c7c55663e54842d39575&query=${position.coords.latitude},${position.coords.longitude}&units=m`
+                    const url = `https://api.weatherstack.com/current?access_key=1d5e2e008d42c7c55663e54842d39575&query=${position.coords.latitude},${position.coords.longitude}&units=m`
                     fetch(url).then(res=>res.json()).then(result=> {
                         if(!result){
                             getWeather.innerHTML= `<p>Loading....</p>`

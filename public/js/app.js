@@ -11,9 +11,6 @@ window.onload = () => {
         getWeather.innerHTML = `<p>Browser does not support geolocation</p>`
     }else{
         navigator.permissions.query({ name: 'geolocation' }).then((result)=>{
-            if(!result){
-                getWeather.innerHTML = `<p>Loading...</p>`
-            }
             if(result.state === "denied"){
                 getWeather.innerHTML= `<p>Geolocation is denied by browser. Please give access to location</p>`
             }else{
